@@ -24,7 +24,7 @@ pub fn combination_lock() {
                 let mut input = String::new();
                 match stdin().read_line(&mut input) {
                     Ok(_) => {
-                        entry.push_str(&input.trim_end());
+                        entry.push_str(input.trim_end());
                     }
                     Err(_) => {
                         println!("Invalid code");
